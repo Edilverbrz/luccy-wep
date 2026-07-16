@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luccy - Asistente de Ahorro Inteligente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        luccy: {
+                            50: '#f0fdf9',
+                            100: '#ccfbf0',
+                            200: '#99f6e0',
+                            300: '#5eead0',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f6f64',
+                            800: '#115e56',
+                            900: '#134e4a',
+                            darkBg: '#121212',
+                            darkCard: '#1e1e1e'
+                        }
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="transition-colors duration-300">
+
+    <div id="root"></div>
+
+    <script src="js/data/config.js"></script>
+    <script src="js/utils/financials.js"></script>
+    <script type="text/babel" src="js/components/Toast.jsx"></script>
+    <script type="text/babel" src="js/components/AuthScreen.jsx"></script>
+    <script type="text/babel" src="js/components/SetupScreen.jsx"></script>
+    <script type="text/babel" src="js/components/LuccyAIChat.jsx"></script>
+    <script type="text/babel" src="js/components/DashboardHome.jsx"></script>
+    <script type="text/babel" src="js/components/DashboardHistory.jsx"></script>
+    <script type="text/babel" src="js/components/DashboardScreen.jsx"></script>
+    <script type="text/babel" src="js/components/BottomNav.jsx"></script>
+    <script type="text/babel" src="js/components/AddExpenseSheet.jsx"></script>
+    <script type="text/babel" src="js/components/EditMonthModal.jsx"></script>
+    <script type="text/babel" src="js/App.jsx"></script>
+
+</body>
+</html>
