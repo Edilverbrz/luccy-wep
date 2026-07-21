@@ -1,0 +1,19 @@
+{
+  "name": "luccy-wep",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:app": "vite --root luccy.app --port 4173 --strictPort",
+    "dev:wep": "vite --root luccywep --port 4174 --strictPort",
+    "build:app": "vite build --root luccy.app --outDir dist",
+    "build:wep": "vite build --root luccywep --outDir dist"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  }
+}

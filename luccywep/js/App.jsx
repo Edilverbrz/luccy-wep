@@ -320,7 +320,11 @@ function App() {
 
                                     <div className="flex gap-2 w-full sm:w-auto">
                                         <button 
-                                            onClick={() => setIsEditMonthOpen(true)}
+                                            onClick={() => {
+                                                setFixedExpName('');
+                                                setFixedExpAmount('');
+                                                setIsEditMonthOpen(true);
+                                            }}
                                             className="flex-1 sm:flex-none border border-[#0e6f64] text-[#0e6f64] dark:text-emerald-300 dark:border-emerald-500/30 hover:bg-emerald-50 dark:hover:bg-zinc-800 px-4 py-2.5 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-1.5"
                                         >
                                             <i className="ph-bold ph-gear"></i>
@@ -393,6 +397,13 @@ function App() {
                 <EditMonthModal 
                     setupIncome={setupIncome}
                     setSetupIncome={setSetupIncome}
+                    fixedExpenses={fixedExpenses}
+                    fixedExpName={fixedExpName}
+                    setFixedExpName={setFixedExpName}
+                    fixedExpAmount={fixedExpAmount}
+                    setFixedExpAmount={setFixedExpAmount}
+                    onAddFixedExpense={handleAddFixedExpense}
+                    onDeleteFixedExpense={handleDeleteFixedExpense}
                     onClose={() => setIsEditMonthOpen(false)}
                     onSubmit={handleUpdateMonth}
                 />
