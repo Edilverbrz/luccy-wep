@@ -1,2 +1,54 @@
-# luccy-wep
-asistente contable luccy wep 
+# Luccy WEP
+
+Luccy WEP es una aplicación web de finanzas personales diseñada para ayudar a personas y pequeños usuarios a controlar ingresos, gastos fijos, gastos diarios y ahorro mensual de forma simple, visual y segura. La app está pensada para quienes necesitan organizar su presupuesto sin depender de plataformas externas o procesos complejos.
+
+## 🚀 Características principales
+
+- **Control de ingresos y gastos:** permite registrar ingresos mensuales, gastos fijos y gastos diarios desde una interfaz sencilla.
+- **Panel de presupuesto inteligente:** muestra el dinero disponible para gastar, el porcentaje de consumo y alertas cuando el presupuesto está cerca de agotarse.
+- **Asistente financiero Luccy:** ofrece consejos personalizados y respuestas rápidas sobre ahorro, gastos y hábitos financieros.
+- **Modo Agente:** incluye un modo conversacional para orientar al usuario con recomendaciones basadas en su situación financiera actual.
+- **Modo offline y seguro:** guarda los datos localmente en el navegador, sin necesidad de conexión a internet ni de un backend externo.
+- **Respaldo local:** permite exportar los datos en formato JSON para conservar una copia de seguridad.
+
+## 🛠️ Tecnologías utilizadas
+
+- **Lenguaje/Framework principal:** JavaScript con React (mediante CDN) y JSX.
+- **Gestión de entornos:** aplicación web estática, sin dependencias de instalación complejas.
+- **Estilos:** Tailwind CSS y CSS personalizado.
+- **Base de datos:** almacenamiento local en el navegador mediante localStorage.
+
+## 📦 Instalación y Configuración
+
+Sigue estos pasos para ejecutar el proyecto en tu máquina local.
+
+### Prerrequisitos
+
+- Navegador moderno como Chrome, Edge o Firefox.
+- Python 3.x (opcional, pero recomendado para servir los archivos localmente).
+- Git para clonar el repositorio.
+
+### Pasos de instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/luccy-wep.git
+   cd luccy-wep
+   ```
+
+2. Inicia un servidor local para abrir la aplicación:
+   ```bash
+   python3 -m http.server 8000
+   ```
+
+3. Abre en tu navegador la siguiente dirección:
+   ```text
+   http://localhost:8000/luccy.app/
+   ```
+
+4. Si lo prefieres, también puedes abrir directamente el archivo index.html desde la carpeta luccy.app, aunque usar un servidor local es la opción más recomendada.
+
+### Notas importantes
+
+- Los datos se guardan en el navegador, por lo que si borras la caché o el almacenamiento del sitio, se perderán los registros.
+- La aplicación está diseñada para uso personal y educativo, con un enfoque simple y rápido para el seguimiento financiero diario.
